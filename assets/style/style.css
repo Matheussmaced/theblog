@@ -1,0 +1,382 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --color-white: #fff;
+    --background-header: #290742;
+    --background-busca: #170027;
+    --background-search: #9E6DC2;
+    --color-paragrafo: #FBF6FF;
+}
+
+/*Header*/
+#topo{
+    display: flex;
+    align-items: center;
+    padding-top: 64px;
+    max-width: 1169.14px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-white);
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+    word-spacing: 32px;
+}
+
+#txtBusca{
+    width: 230px;
+    height: 44px;
+    background: var(--background-busca);
+    border: none;
+    border-radius: 4px 0px 0px 4px;
+    color: white;
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+#pesquisa{
+    display: flex;
+    align-items: center;
+}
+
+#search{
+    background-color: var(--background-search);
+    padding: 10px 23px;
+    border-radius: 0px 4px 4px 0px;
+}
+
+input::placeholder{
+    color: var(--color-paragrafo);
+    font-size: 14px;
+    padding-left: 25.65px;
+}
+
+header{
+    background-color: var(--background-header);
+    height: 587px;
+}
+
+/*GUIA*/
+
+#guia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 64px;
+}
+
+h1 {
+    width: 569px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--background-search);
+    line-height: 54px;
+    font-size: 36px;
+}
+
+#paragrafoHeader{
+    width: 469px;
+    color: var(--color-paragrafo);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    padding-top: 16px;
+    padding-bottom: 24px;
+}
+
+#featured{
+    border-radius: 8px;
+}
+
+#vejaMaisContainer{
+    display: flex;
+    align-items: center;
+}
+
+#vejaMais{
+    padding-right: 8px;
+    color: var(--background-search);
+    font-size: 18px;
+} 
+
+/*Imagem1*/
+
+#container-one{
+    display: flex;
+    max-width: 1169.14px;
+    margin: 0 auto; 
+    justify-content: space-between;
+    padding-top: 61px;
+}
+
+h2{
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 36px;
+    color: var(--background-header);
+    max-width: 467.739px;
+    margin-bottom: 8px;
+}
+
+h3{
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 36px;
+    color: var(--background-header);
+    margin-bottom: 8px;
+}
+
+.p1, .p2{
+    color: black;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    width: 471px;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+.p2{
+    width: 468px;
+}
+
+#data2{
+    padding-top: 48.55px;
+}
+
+figcaption{
+    font-family: 'Roboto', sans-serif;
+    padding-top: 15.97px;
+}
+
+#text2{
+    display: block;
+    max-width: 1169.14px;
+    margin: 0 auto; 
+}
+
+#textReact{
+    width: 569px;
+    line-height: 24px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif; 
+    padding-top: 7.97px;   
+}
+
+/*body*/
+
+#container-body{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 370px;
+    justify-content: center;
+    max-width: 1169.14px;
+    margin: 0 auto;
+    padding-top: 63.79px;
+    
+}
+
+.datasBody{
+    margin-bottom: 8px;
+}
+
+.paragrafosBody{
+    padding-bottom: 67.58px;
+}
+
+/*footer*/
+
+footer{
+    background-color: var(--background-header);
+    position: relative;
+    top: 100px;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    color: #FBF6FF;
+    font-family: 'Roboto', sans-serif; 
+}
+
+#nameLink{
+    color: var(--background-search);
+}
+
+/*Mobile*/
+
+@media(max-width: 820px){
+    #topo{
+    display: block;
+    padding-top: 30px;
+    max-width: 1169.14px;
+    text-align: center;
+}
+
+.p1, .p2{
+    color: black;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    width: 90%;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+.p2{
+    width: 90%;
+}
+
+#paragrafo2{
+    padding-bottom: 50px;
+}
+
+p{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 95%;
+    font-size: 18px;
+}
+
+h2, h3{
+    text-align: center;
+    max-width: 95%;
+    margin: 0 auto;
+    padding-bottom: 12px;
+    padding-top: 8px;
+}
+
+#txtBusca{
+    width: 230px;
+    height: 44px;
+    background: var(--background-busca);
+    border: none;
+    border-radius: 4px 0px 0px 4px;
+    margin: 0 auto;
+    position: relative;
+    top: 40px;
+    left: 20px;
+    
+}
+
+#search{
+    background-color: var(--background-search);
+    padding: 10px 23px;
+    border-radius: 0px 4px 4px 0px;
+    position: relative;
+    right: 20%;
+    top: 40px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-white);
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    top: 20px;
+}
+
+#guia{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding-top: 64px;
+}
+
+h1 {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: var(--background-search);
+    line-height: 30px;
+    font-size: 30px;
+}
+
+#paragrafoHeader{
+    width: 80%;
+    color: var(--color-paragrafo);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    padding-top: 16px;
+    padding-bottom: 24px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+#vejaMaisContainer{
+    display: none;
+}
+
+#vejaMais{
+    display: none;
+} 
+
+#featured{
+    display: flex;
+    border-radius: 10px;
+    width: 350px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: var(--background-header);
+    height: 730px;
+}
+
+figcaption{
+    display: none;
+}
+
+#container-one{
+    display: block;
+    max-width: 1169.14px;
+    margin: 0 auto; 
+    justify-content: space-between;
+    padding-top: 61px;
+}
+
+#post1{
+    width: 374px;
+    display: flex;
+    margin: 0 auto;
+}
+
+#textReact{
+    width: 90%;
+    line-height: 24px;
+    color: black;
+    font-family: 'Roboto', sans-serif; 
+    padding-top: 7.97px;   
+}
+
+
+
+#container-body{
+    display: block;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 370px;
+    justify-content: center;
+    max-width: 1169.14px;
+    margin: 0 auto;
+    padding-top: 63.79px;
+    text-align: center;
+    
+}
+
+#lastparagrafo{
+    padding-bottom: 1px;
+}
+
+
+
+}
